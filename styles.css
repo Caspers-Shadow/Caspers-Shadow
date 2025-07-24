@@ -1,32 +1,38 @@
+/* styles.css */
 :root {
-  --background: #1e1b2e;
-  --violet: #6a0dad;
+  --violet: #8a2be2;
   --lilac: #c8a2c8;
-  --white: #f4f4f4;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  --dark-bg: #1e1b2e;
+  --dark-text: #f4f4f4;
+  --light-bg: #f9f9f9;
+  --light-text: #222;
+  --nav-bg: #6a0dad;
+  --transition: 0.3s ease;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--background);
-  color: var(--white);
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+  transition: background-color var(--transition), color var(--transition);
   padding: 20px;
-  position: relative;
   min-height: 100vh;
   overflow-x: hidden;
+  position: relative;
+}
+
+/* Light mode override */
+body.light-mode {
+  background-color: var(--light-bg);
+  color: var(--light-text);
 }
 
 header {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 30px;
-  position: relative;
 }
 
 h1 {
@@ -34,34 +40,28 @@ h1 {
   color: var(--violet);
 }
 
-.title {
-  font-size: 1.5rem;
-  color: var(--lilac);
-}
-
 #hamburger {
   font-size: 2rem;
   cursor: pointer;
-  margin-top: 10px;
 }
 
 nav {
   display: flex;
   flex-direction: column;
-  background: var(--violet);
+  background: var(--nav-bg);
   padding: 10px;
   border-radius: 8px;
   position: absolute;
   top: 100%;
   left: 0;
   z-index: 10;
+  transition: var(--transition);
 }
 
 nav a {
-  color: var(--white);
+  color: white;
   text-decoration: none;
   padding: 8px 0;
-  transition: color 0.2s ease-in-out;
 }
 
 nav a:hover {
@@ -73,7 +73,7 @@ nav a:hover {
 }
 
 main {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .profile-pic-large {
@@ -95,21 +95,60 @@ main {
   }
 }
 
-.intro {
-  text-align: center;
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
+.bubble {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--lilac);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: var(--transition);
 }
 
-.about-section {
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.6;
+body.light-mode .bubble {
+  background-color: #fff;
+  border-color: var(--violet);
+  color: var(--light-text);
 }
 
-.about-section h2, .about-section h3 {
-  color: var(--lilac);
+button, .dark-toggle {
+  background-color: var(--violet);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
   margin-top: 20px;
+  transition: var(--transition);
+}
+
+button:hover, .dark-toggle:hover {
+  background-color: var(--lilac);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 16px 0;
+  border-radius: 6px;
+  border: 1px solid var(--lilac);
+  background-color: #2d2a3f;
+  color: white;
+}
+
+body.light-mode .contact-form input,
+body.light-mode .contact-form textarea {
+  background-color: #f1f1f1;
+  color: #222;
+  border-color: var(--violet);
+}
+
+.social-links a {
+  margin-right: 15px;
+  color: var(--lilac);
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: var(--violet);
 }
