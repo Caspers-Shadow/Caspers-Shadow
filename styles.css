@@ -82,6 +82,7 @@ main {
   padding: 20px;
   flex-grow: 1;
 }
+
 /* Responsive: Side nav collapses */
 .side-nav-toggle {
   display: none;
@@ -126,11 +127,13 @@ main {
     display: block;
   }
 }
+
 /* Header styles */
 header {
   margin-bottom: 30px;
   color: var(--lilac);
 }
+
 /* Profile picture styles */
 .profile-pic-large {
   width: 300px;
@@ -142,6 +145,7 @@ header {
   box-shadow: 0 0 40px var(--violet);
   animation: glow 3s infinite alternate;
 }
+
 @keyframes glow {
   from {
     box-shadow: 0 0 20px var(--lilac);
@@ -150,11 +154,13 @@ header {
     box-shadow: 0 0 40px var(--violet);
   }
 }
+
 @keyframes gradientBG {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
 /* Sections styling */
 section.bubble {
   background: rgba(106, 13, 173, 0.15);
@@ -172,6 +178,7 @@ section.bubble:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 25px rgba(200, 162, 200, 0.3);
 }
+
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -186,6 +193,9 @@ section.bubble:hover {
   color: var(--white);
   border: 1px solid var(--lilac);
 }
+
+
+
 h1 {
   font-size: 2.5rem;
   color: var(--violet);
@@ -196,10 +206,12 @@ h2 {
   color: var(--lilac);
   margin-bottom: 15px;
 }
+
 p, li {
   font-size: 1.1rem;
   line-height: 1.5;
 }
+
 ul.details {
   list-style-type: circle;
   margin-top: 5px;
@@ -220,6 +232,7 @@ ul.details {
   color: var(--lilac);
   font-weight: 600;
 }
+
 .contact-form input,
 .contact-form textarea {
   padding: 10px;
@@ -236,6 +249,7 @@ ul.details {
   background: #2a2450;
   color: var(--white);
 }
+
 .contact-form button {
   margin-top: 20px;
   background: var(--violet);
@@ -257,14 +271,16 @@ ul.details {
 /* Social links */
 .social-links a {
   color: var(--lilac);
- margin-right: 20px;
+  margin-right: 20px;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s ease-in-out;
 }
+
 .social-links a:hover {
   color: var(--white);
 }
+
 /* Intro Paragraph */
 .intro {
   font-size: 1.2rem;
@@ -272,6 +288,7 @@ ul.details {
   text-align: center;
   line-height: 1.6;
 }
+
 /* Quick Stats Section */
 .quick-stats {
   display: flex;
@@ -310,6 +327,7 @@ ul.details {
 /* CTA Button */
 .cta-container {
   text-align: center;
+  margin-top: 20px;
 }
 
 .cta-button {
@@ -337,6 +355,7 @@ ul.details {
   margin-top: 50px;
   font-size: 1.2rem;
 }
+
 main > section {
   opacity: 0;
   transform: translateY(20px);
@@ -359,7 +378,7 @@ main > section:nth-child(4) { animation-delay: 0.6s; }
   position: fixed;
   top: 0;
   left: 0;
-width: 100vw;
+  width: 100vw;
   height: 100vh;
   z-index: -1;
   background: transparent;
@@ -367,3 +386,4 @@ width: 100vw;
 }
 
 }
+
