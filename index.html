@@ -3,38 +3,40 @@
 <head>
   <meta charset="utf‑8">
   <meta name="viewport" content="width=device-width,initial‑scale=1">
-  <title>Mariska’s CV</title>
+  <title>My Virtual CV</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <img src="your‑photo.jpg" alt="Mariska" class="profile-pic">
+    <img src="your-photo.jpg" alt="Profile picture" class="profile-pic">
     <div id="hamburger" onclick="toggleMenu()">☰</div>
     <nav id="menu" class="hidden">
-      <a href="#about">About</a>
+      <a href="#about">About Me</a>
       <a href="#experience">Experience</a>
       <a href="#contactForm">Contact</a>
-      <!-- Add more here -->
     </nav>
   </header>
 
   <main>
     <section id="about">
       <h1>About Me</h1>
-      <p>Hi, I’m Mariska…</p>
+      <p>Hello! I’m [Your Name], a [Your Role]. Welcome to my virtual CV!</p>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="hidden">
       <h2>Experience</h2>
-      <!-- CV content -->
+      <ul>
+        <li>Job Title 1 – Company (Dates)</li>
+        <li>Job Title 2 – Company (Dates)</li>
+      </ul>
     </section>
 
     <section id="contactForm" class="hidden">
       <h2>Contact / Feedback</h2>
-      <form action="https://formspree.io/f/mqalpvrq" method="post">
-        <input name="name" placeholder="Your name">
-        <input type="email" name="email" placeholder="Your email">
-        <textarea name="message" placeholder="Your message"></textarea>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Your message" required></textarea>
         <button type="submit">Send</button>
       </form>
     </section>
