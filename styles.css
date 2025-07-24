@@ -1,43 +1,115 @@
-/* Profile picture and project images style (rectangular with glow) */
+:root {
+  --background: #1e1b2e;
+  --violet: #6a0dad;
+  --lilac: #c8a2c8;
+  --white: #f4f4f4;
+}
 
-.profile-pic,
-.project-img {
-  width: 300px;           /* Fixed width, adjust if needed */
-  height: 180px;          /* Fixed height for uniformity */
-  border-radius: 20px;    /* Rounded corners */
-  object-fit: cover;
-  margin: 0 auto 1.5rem auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+  color: var(--white);
+  padding: 20px;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--violet);
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--lilac);
+}
+
+#hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background: var(--violet);
+  padding: 10px;
+  border-radius: 8px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 8px 0;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: var(--lilac);
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  padding-top: 10px;
+}
+
+.profile-pic-large {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 30px auto;
   display: block;
-  border: 5px solid var(--violet);
-  box-shadow: 0 0 25px var(--violet);
-  animation: glow 2s ease-in-out infinite alternate;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 40px var(--violet);
+  animation: glow 3s infinite alternate;
 }
 
-.project-img {
-  /* If you want project images smaller or different, tweak here */
-  width: 100%; /* or keep 300px for fixed size */
-  max-width: 300px;
-  height: auto;
-  margin-bottom: 1rem;
-  animation: none; /* optional: no glow animation on project images */
-  box-shadow: 0 4px 12px rgba(106, 13, 173, 0.3);
-}
-
-.profile-pic:hover,
-.project-img:hover {
-  transform: scale(1.05);
-  box-shadow:
-    0 0 40px var(--lilac),
-    0 10px 20px rgba(106, 13, 173, 0.25);
-}
-
-/* Glow animation keyframes */
 @keyframes glow {
   from {
-    box-shadow: 0 0 20px var(--violet);
+    box-shadow: 0 0 20px var(--lilac);
   }
   to {
-    box-shadow: 0 0 40px var(--lilac);
+    box-shadow: 0 0 40px var(--violet);
   }
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about-section {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about-section h2, .about-section h3 {
+  color: var(--lilac);
+  margin-top: 20px;
 }
