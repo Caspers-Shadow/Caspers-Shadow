@@ -179,6 +179,22 @@ section.bubble:hover {
   box-shadow: 0 0 25px rgba(200, 162, 200, 0.3);
 }
 
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-grid span {
+  background: rgba(200, 162, 200, 0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  color: var(--white);
+  border: 1px solid var(--lilac);
+}
+
+
 
 h1 {
   font-size: 2.5rem;
