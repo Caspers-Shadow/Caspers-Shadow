@@ -11,38 +11,97 @@
     <img src="Me but nice.jpg" alt="Profile picture" class="profile-pic">
     <div id="hamburger" onclick="toggleMenu()">☰</div>
     <nav id="menu" class="hidden">
-      <a href="#about">About Me</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
       <a href="#experience">Experience</a>
-      <a href="#contactForm">Contact</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio / Projects</a>
+      <a href="#contactForm">Contact / Feedback</a>
     </nav>
   </header>
 
-  <main>
-    <section id="about">
-      <h1>About Me</h1>
-      <p>Hello! I’m Mariska Adriaanzen, a BSC Information Technology student. Welcome to my virtual CV!</p>
-    </section>
+<main>
+  <section id="home">
+    <img src="Me but nice.jpg" alt="Profile picture" class="profile-pic-large">
+    <h1>Mariska Adriaanzen</h1>
+    <h2>BSC Information Technology Student</h2>
+    <p>Welcome to my virtual CV! Here’s a quick intro about me...</p>
+  </section>
 
-    <section id="experience" class="hidden">
-      <h2>Experience</h2>
+  <section id="about" class="hidden">
+    <h2>About Me</h2>
+    <p>A detailed bio about me, career goals, professional philosophy...</p>
+    <ul>
+      <li>Motivation and key strengths</li>
+      <li>Personal interests</li>
+    </ul>
+  </section>
+
+  <section id="experience" class="hidden">
+    <h2>Experience</h2>
+    <article>
+      <h3>Runner – Company Name</h3>
+      <p>Dates, Location</p>
       <ul>
-        <li>Runner – Company (Dates)</li>
-        <li>Waitress – Company (Dates)</li>
-        <li>Hostess – Company (Dates)</li>
-        <li>Part time sales person and inventory control – Company (Dates)</li>
+        <li>Key responsibility 1</li>
+        <li>Achievement 2</li>
       </ul>
-    </section>
+    </article>
+    <!-- Add more jobs/projects -->
+  </section>
 
-    <section id="contactForm" class="hidden">
-      <h2>Contact / Feedback</h2>
-      <form action="https://formspree.io/f/mqalpvrq" method="POST">
-        <input name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your email" required>
-        <textarea name="message" placeholder="Your message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
+  <section id="education" class="hidden">
+    <h2>Education</h2>
+    <ul>
+      <li>BSC Information Technology – University Name (Dates)</li>
+      <li>Certifications (name, date)</li>
+    </ul>
+  </section>
+
+  <section id="skills" class="hidden">
+    <h2>Skills</h2>
+    <h3>Hard Skills</h3>
+    <ul>
+      <li>Programming languages (e.g. C#, Python)</li>
+      <li>Software tools (e.g. Visual Studio, Git)</li>
+    </ul>
+    <h3>Soft Skills</h3>
+    <ul>
+      <li>Communication</li>
+      <li>Leadership</li>
+      <li>Problem-solving</li>
+    </ul>
+  </section>
+
+  <section id="portfolio" class="hidden">
+    <h2>Portfolio / Projects</h2>
+    <article>
+      <h3>Project Title 1</h3>
+      <img src="project1-screenshot.jpg" alt="Project 1 Screenshot" class="project-img">
+      <p>Description of project, technologies used, and outcome.</p>
+      <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener">View Code</a>
+    </article>
+    <!-- Add more projects -->
+  </section>
+
+  <section id="contactForm" class="hidden">
+    <h2>Contact / Feedback</h2>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>Socials: 
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a> | 
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a> | 
+      <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener">Twitter</a>
+    </p>
+    <form action="https://formspree.io/f/mqalpvrq" method="POST">
+      <input name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" placeholder="Your message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</main>
+
 
   <script src="scripts.js"></script>
 </body>
