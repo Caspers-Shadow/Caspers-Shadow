@@ -1,16 +1,22 @@
 function toggleMenu() {
-  document.getElementById('menu')
-    .classList.toggle('hidden');
+  document.getElementById('menu').classList.toggle('hidden');
 }
 
 document.querySelectorAll('nav a').forEach(link => {
-  link.addEventListener('click', e => {
+  link.addEventListener('click', function (e) {
     e.preventDefault();
-    const target = e.target.getAttribute('href').substring(1);
-    document.querySelectorAll('main section')
-      .forEach(sec => sec.classList.add('hidden'));
-    document.getElementById(target).classList.remove('hidden');
-    document.getElementById('menu')
-      .classList.add('hidden');
+    const sectionId = this.getAttribute('href').substring(1);
+
+    // Hide all sections
+    document.querySelectorAll('main section').forEach(sec => {
+      sec.classList.add('hidden');
+    });
+
+    // Show the selected section
+    document.getElementById(sectionId).classList.remove('hidden');
+
+    // Hide the menu
+    document.getElementById('menu').classList.add('hidden');
   });
 });
+
