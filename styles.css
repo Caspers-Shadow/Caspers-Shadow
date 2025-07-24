@@ -5,99 +5,143 @@
   --white: #f4f4f4;
 }
 
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body & layout */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--background);
   color: var(--white);
   padding: 20px;
-  position: relative;
   min-height: 100vh;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
 }
 
 /* Side Navigation */
 .side-nav {
+  background: var(--violet);
+  width: 220px;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  width: 220px;
-  height: 100vh;
-  background-color: var(--violet);
-  padding: 2rem 1rem;
+  padding-top: 60px;
+  box-shadow: 2px 0 8px rgba(106, 13, 173, 0.6);
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.5rem;
-  box-shadow: 2px 0 8px rgba(106, 13, 173, 0.7);
-  z-index: 100;
 }
 
 .side-nav nav {
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
 }
 
-.side-nav .nav-link {
+.side-nav nav a {
   color: var(--white);
   text-decoration: none;
-  font-weight: 600;
-  padding: 0.75rem 1rem;
-  border-radius: 6px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 12px 0;
+  font-weight: 500;
+  width: 100%;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-radius: 4px;
 }
 
-.side-nav .nav-link:hover,
-.side-nav .nav-link:focus {
+.side-nav nav a:hover {
+  color: var(--lilac);
+  background-color: rgba(200, 162, 200, 0.2);
+  padding-left: 10px;
+}
+
+.side-nav nav a.active {
   background-color: var(--lilac);
   color: var(--background);
-  outline: none;
+  font-weight: 700;
+  padding-left: 10px;
+  border-radius: 4px;
 }
 
-/* Main content shifted right so side nav doesn't cover it */
+/* Main content */
 main {
-  margin-left: 240px; /* slightly more than side nav width for spacing */
-  padding: 2rem;
+  margin-left: 240px; /* space for nav */
+  padding: 20px;
+  flex-grow: 1;
 }
 
-/* Header */
+/* Responsive: Side nav collapses */
+.side-nav-toggle {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: var(--violet);
+  border: none;
+  color: var(--white);
+  font-size: 1.8rem;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .side-nav {
+    left: -260px;
+    width: 220px;
+    height: 100vh;
+    padding-top: 60px;
+    position: fixed;
+    top: 0;
+    transition: left 0.3s ease-in-out;
+  }
+
+  .side-nav.open {
+    left: 0;
+  }
+
+  main {
+    margin-left: 0 !important;
+    padding: 20px;
+  }
+
+  .side-nav-toggle {
+    display: block;
+  }
+}
+
+/* Header styles */
 header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   margin-bottom: 30px;
-  position: relative;
-}
-
-h1 {
-  font-size: 2.5rem;
-  color: var(--violet);
-}
-
-.title {
-  font-size: 1.5rem;
   color: var(--lilac);
 }
 
-/* Profile picture rectangular with glow */
+/* Profile picture styles */
 .profile-pic-large {
-  width: 350px;
-  height: 250px;
-  border-radius: 12px; /* Slightly rounded corners */
+  width: 300px;
+  height: 180px;
+  border-radius: 15px;
   margin: 30px auto;
   display: block;
+  object-fit: cover;
   box-shadow: 0 0 40px var(--violet);
   animation: glow 3s infinite alternate;
-  object-fit: cover; /* ensures image fills rectangle nicely */
 }
 
-/* Glow animation */
 @keyframes glow {
   from {
     box-shadow: 0 0 20px var(--lilac);
@@ -107,99 +151,87 @@ h1 {
   }
 }
 
-/* Typography */
-.intro, 
-.about-section, 
-.bubble {
-  max-width: 700px;
-  margin: 0 auto 2rem;
-  line-height: 1.6;
+/* Sections styling */
+section.bubble {
+  background: rgba(106, 13, 173, 0.15);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 15px rgba(106, 13, 173, 0.3);
 }
 
-.about-section h2, 
-.about-section h3,
-.bubble h2 {
+h1 {
+  font-size: 2.5rem;
+  color: var(--violet);
+  margin-bottom: 10px;
+}
+
+h2 {
   color: var(--lilac);
-  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
-/* Navigation links in bubbles */
-nav a {
-  color: var(--white);
-  text-decoration: none;
-  padding: 8px 0;
-  transition: color 0.2s ease-in-out;
+p, li {
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
-nav a:hover {
-  color: var(--lilac);
-}
-
-/* Form styles (for contact page) */
+/* Form styles */
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  max-width: 500px;
-  margin-top: 1rem;
 }
 
 .contact-form label {
+  margin: 12px 0 6px 0;
+  color: var(--lilac);
   font-weight: 600;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 0.5rem;
-  border-radius: 6px;
+  padding: 10px;
+  border-radius: 8px;
   border: none;
   font-size: 1rem;
+  resize: vertical;
+  font-family: inherit;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  outline: 2px solid var(--lilac);
-  background-color: #2a2540;
+  outline: 2px solid var(--violet);
+  background: #2a2450;
   color: var(--white);
 }
 
 .contact-form button {
-  background-color: var(--violet);
-  color: var(--white);
-  padding: 0.75rem 1rem;
+  margin-top: 20px;
+  background: var(--violet);
   border: none;
-  border-radius: 8px;
+  padding: 12px;
+  color: var(--white);
+  font-weight: 700;
   font-size: 1.1rem;
-  font-weight: 600;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-  background-color: var(--lilac);
+  background: var(--lilac);
   color: var(--background);
 }
 
-/* Social links in contact */
-.social-links {
-  display: flex;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-
+/* Social links */
 .social-links a {
   color: var(--lilac);
-  font-weight: 600;
+  margin-right: 20px;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.2s ease-in-out;
+  font-weight: 600;
+  transition: color 0.2s ease-in-out;
 }
 
 .social-links a:hover {
-  border-bottom: 1px solid var(--lilac);
-}
-
-/* Utility */
-.hidden {
-  display: none;
+  color: var(--white);
 }
