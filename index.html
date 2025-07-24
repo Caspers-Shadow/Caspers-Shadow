@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +25,15 @@
   </main>
 
   <script>
+    const toggleBtn = document.createElement('button');
+    toggleBtn.textContent = 'Toggle Dark Mode';
+    toggleBtn.className = 'dark-toggle';
+    document.querySelector('header').appendChild(toggleBtn);
+
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+    });
+
     document.getElementById('hamburger').onclick = () => {
       document.getElementById('navMenu').classList.toggle('hidden');
     };
