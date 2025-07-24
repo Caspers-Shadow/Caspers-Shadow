@@ -2,22 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Experience & Skills</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Experience & Skills</h1>
-    <div id="hamburger">&#9776;</div>
-    <nav class="hidden" id="navMenu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="contact.html">Contact</a>
+  <aside class="side-nav">
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Me</a>
+      <a href="experience.html" class="nav-link">Experience & Skills</a>
+      <a href="contact.html" class="nav-link">Contact</a>
     </nav>
-  </header>
+  </aside>
 
   <main>
+    <header>
+      <h1>Experience & Skills</h1>
+    </header>
+
     <section class="bubble">
       <h2>💼 Work Experience</h2>
       <ul>
@@ -27,19 +30,10 @@
     </section>
 
     <section class="bubble">
-      <h2>🧰 Technical Proficiencies</h2>
+      <h2>🧠 Hard Skills</h2>
       <ul>
-        <li>Frontend: HTML, CSS, JavaScript, React</li>
-        <li>Backend: C#, .NET, SQL</li>
-        <li>Tools: Git, VS Code, Figma, Postman</li>
-      </ul>
-    </section>
-
-    <section class="bubble">
-      <h2>🌱 Learning</h2>
-      <ul>
-        <li>TypeScript</li>
-        <li>Cloud: Azure Fundamentals</li>
+        <li>HTML, CSS, JavaScript, C#, .NET</li>
+        <li>React, .NET MAUI, SQL</li>
       </ul>
     </section>
 
@@ -52,20 +46,5 @@
       </ul>
     </section>
   </main>
-
-  <script>
-    const toggleBtn = document.createElement('button');
-    toggleBtn.textContent = 'Toggle Dark Mode';
-    toggleBtn.className = 'dark-toggle';
-    document.querySelector('header').appendChild(toggleBtn);
-
-    toggleBtn.addEventListener('click', () => {
-      document.body.classList.toggle('light-mode');
-    });
-
-    document.getElementById('hamburger').onclick = () => {
-      document.getElementById('navMenu').classList.toggle('hidden');
-    };
-  </script>
 </body>
 </html>
