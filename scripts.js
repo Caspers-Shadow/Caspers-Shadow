@@ -2,8 +2,16 @@ function toggleMenu() {
   document.getElementById('menu').classList.toggle('hidden');
 }
 
+// Initially show home, hide others
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('main section').forEach((sec) => {
+    if (sec.id === 'home') sec.classList.remove('hidden');
+    else sec.classList.add('hidden');
+  });
+});
+
 document.querySelectorAll('nav a').forEach(link => {
-  link.addEventListener('click', function (e) {
+  link.addEventListener('click', function(e) {
     e.preventDefault();
     const sectionId = this.getAttribute('href').substring(1);
 
@@ -12,11 +20,10 @@ document.querySelectorAll('nav a').forEach(link => {
       sec.classList.add('hidden');
     });
 
-    // Show the selected section
+    // Show selected
     document.getElementById(sectionId).classList.remove('hidden');
 
-    // Hide the menu
+    // Close menu
     document.getElementById('menu').classList.add('hidden');
   });
 });
-
