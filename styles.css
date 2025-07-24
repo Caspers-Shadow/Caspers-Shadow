@@ -387,6 +387,92 @@ main > section:nth-child(4) { animation-delay: 0.6s; }
 
 }
 
+/* Detailed job role list styling */
+ul.details {
+  list-style-type: circle;
+  margin-top: 5px;
+  margin-left: 20px;
+  color: #ddd;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* Hard Skills Tag Grid */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-grid span {
+  background: rgba(200, 162, 200, 0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  color: var(--white);
+  border: 1px solid var(--lilac);
+}
+
+/* Soft Skills Icons */
+.soft-skills li {
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+.soft-skills li i {
+  margin-right: 10px;
+  color: var(--lilac);
+}
+
+/* Section heading divider */
+section.bubble h2 {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+section.bubble h2::before {
+  content: '•';
+  color: var(--lilac);
+  margin-right: 8px;
+}
+
+/* Animate list items */
+section.bubble ul li {
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+section.bubble ul li:nth-child(1) { animation-delay: 0.1s; }
+section.bubble ul li:nth-child(2) { animation-delay: 0.2s; }
+section.bubble ul li:nth-child(3) { animation-delay: 0.3s; }
+
+/* Download button */
+.cta-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--lilac);
+  color: var(--background);
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: var(--violet);
+  color: var(--white);
+}
+
+
 
 
 
