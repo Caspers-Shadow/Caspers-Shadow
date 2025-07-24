@@ -15,14 +15,18 @@
 /* Body & layout */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--background);
   color: var(--white);
   padding: 20px;
   min-height: 100vh;
   overflow-x: hidden;
   display: flex;
   flex-direction: row;
+  
+  background: linear-gradient(-45deg, #6a0dad, #1e1b2e, #c8a2c8, #1e1b2e);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
 }
+
 
 /* Side Navigation */
 .side-nav {
@@ -309,23 +313,4 @@ p, li {
   color: var(--lilac);
   margin-top: 50px;
   font-size: 1.2rem;
-}
-
-
-body {
-  background: linear-gradient(-45deg, #6a0dad, #1e1b2e, #c8a2c8, #1e1b2e);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-}
-
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
