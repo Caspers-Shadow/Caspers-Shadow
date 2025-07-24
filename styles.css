@@ -1,8 +1,9 @@
 :root {
-  --background: #1e1b2e;
-  --violet: #6a0dad;
-  --lilac: #c8a2c8;
-  --white: #f4f4f4;
+  --violet: #9b59b6;
+  --lilac: #d7bce8;
+  --background: #f9f6fc;
+  --bubble-bg: #ffffff;
+  --text: #333;
 }
 
 * {
@@ -12,56 +13,45 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--background);
-  color: var(--white);
-  padding: 20px;
-  position: relative;
-  min-height: 100vh;
-  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 0 1rem;
 }
 
+/* Header + Navigation */
 header {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 30px;
-  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  background-color: var(--violet);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: var(--violet);
-}
-
-.title {
-  font-size: 1.5rem;
-  color: var(--lilac);
+header h1 {
+  font-size: 1.8rem;
 }
 
 #hamburger {
   font-size: 2rem;
   cursor: pointer;
-  margin-top: 10px;
 }
 
 nav {
   display: flex;
-  flex-direction: column;
-  background: var(--violet);
-  padding: 10px;
-  border-radius: 8px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 10;
+  gap: 1rem;
 }
 
 nav a {
-  color: var(--white);
+  color: white;
   text-decoration: none;
-  padding: 8px 0;
-  transition: color 0.2s ease-in-out;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -72,44 +62,26 @@ nav a:hover {
   display: none;
 }
 
+/* Sections */
 main {
-  padding-top: 10px;
+  max-width: 1000px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.profile-pic-large {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  margin: 30px auto;
-  display: block;
-  box-shadow: 0 0 40px var(--violet);
-  animation: glow 3s infinite alternate;
+/* Bubbly containers */
+.bubble {
+  background: var(--bubble-bg);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(155, 89, 182, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease;
 }
 
-@keyframes glow {
-  from {
-    box-shadow: 0 0 20px var(--lilac);
-  }
-  to {
-    box-shadow: 0 0 40px var(--violet);
-  }
+.bubble:hover {
+  transform: translateY(-5px);
 }
 
-.intro {
-  text-align: center;
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-.about-section {
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-.about-section h2, .about-section h3 {
-  color: var(--lilac);
-  margin-top: 20px;
-}
+/* Glowing Profile Pic *
