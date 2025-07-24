@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About Me</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>About Me</h1>
-    <div id="hamburger">&#9776;</div>
-    <nav class="hidden" id="navMenu">
-      <a href="index.html">Home</a>
-      <a href="experience.html">Experience</a>
-      <a href="skills.html">Skills</a>
-      <a href="contact.html">Contact</a>
+  <aside class="side-nav">
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Me</a>
+      <a href="experience.html" class="nav-link">Experience & Skills</a>
+      <a href="contact.html" class="nav-link">Contact</a>
     </nav>
-  </header>
+  </aside>
 
   <main>
-    <section class="bubble">
+    <header>
+      <h1>About Me</h1>
+    </header>
+
+    <section class="about-section">
       <h2>My Journey</h2>
-      <p>I’m a passionate developer who loves building things that matter. I enjoy blending creativity and code to solve real-world problems.</p>
+      <p>
+        I’m a passionate developer who loves building things that matter. I enjoy blending creativity and code to solve real-world problems.
+      </p>
     </section>
-    <section class="bubble">
+
+    <section class="about-section">
       <h2>Fun Facts</h2>
       <ul>
         <li>I speak fluent JavaScript and sarcasm.</li>
@@ -31,20 +36,5 @@
       </ul>
     </section>
   </main>
-
-  <script>
-    const toggleBtn = document.createElement('button');
-    toggleBtn.textContent = 'Toggle Dark Mode';
-    toggleBtn.className = 'dark-toggle';
-    document.querySelector('header').appendChild(toggleBtn);
-
-    toggleBtn.addEventListener('click', () => {
-      document.body.classList.toggle('light-mode');
-    });
-
-    document.getElementById('hamburger').onclick = () => {
-      document.getElementById('navMenu').classList.toggle('hidden');
-    };
-  </script>
 </body>
 </html>
