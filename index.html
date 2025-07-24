@@ -1,10 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My CV Site</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Caspers Shadow | CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0; padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .contact a {
+      color: #007acc;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.8em;
+      color: #777;
+    }
+    .download {
+      display: inline-block;
+      margin-top: 10px;
+      background: #007acc;
+      color: white;
+      padding: 8px 15px;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, I’m Caspers Shadow 👋</h1>
-  <p>This is my online CV hosted on GitHub Pages.</p>
+  <header>
+    <h1>Caspers Shadow</h1>
+    <p>Software Developer | Tech Enthusiast</p>
+    <div class="contact">
+      <p>
+        <a href="mailto:your@email.com">Email</a> |
+        <a href="https://github.com/Caspers-Shadow" target="_blank">GitHub</a> |
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+    <a class="download" href="cv.pdf" download>Download CV (PDF)</a>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I'm a passionate developer experienced in building .NET applications, designing databases, and deploying web systems. I'm currently studying computer science and love combining logic with design.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>C# (.NET MAUI, Windows Forms)</li>
+      <li>SQL Server & Entity Framework</li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Python, Java</li>
+      <li>Networking (Cisco Packet Tracer)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p><strong>BSc Computer Science</strong> – Your University, 202X–202X</p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <p><strong>Intern – Software Developer</strong><br/>Company Name – 2024<br/>
+    Developed Windows Forms applications to manage client bookings and improve database interaction.</p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>ChimeIn – Mood Tracker</strong>: Mobile app for journaling mood using .NET MAUI</li>
+      <li><strong>Optometrist Booking App</strong>: WebForms + SQL appointment booking system</li>
+      <li><strong>Packet Tracer Network Design</strong>: 100x50m building Wi-Fi and wired setup simulation</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+    <p>Location: Your City, Country</p>
+  </section>
+
+  <footer>
+    © 2025 Caspers Shadow. All rights reserved.
+  </footer>
 </body>
 </html>
