@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <img src="Me but nice.jpg" alt="Profile picture" class="profile-pic">
+    <img src="Me but nice.jpg" alt="Profile picture" class="profile-pic-large">
     <div id="hamburger" onclick="toggleMenu()">☰</div>
     <nav id="navMenu" class="hidden">
       <a href="about.html">About Me</a>
@@ -19,7 +19,6 @@
 
 <main>
   <section id="home">
-    <img src="Me but nice.jpg" alt="Profile picture" class="profile-pic-large">
     <h1>Mariska Adriaanzen</h1>
     <h2>BSC Information Technology Student</h2>
     <p>Welcome to my virtual CV! Here’s a quick intro about me...</p>
@@ -99,6 +98,14 @@
 </main>
 
 
-  <script src="scripts.js"></script>
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('navMenu');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('hidden');
+  });
+</script>
+
 </body>
 </html>
