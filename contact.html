@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact Me</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Contact Me</h1>
-    <div id="hamburger">&#9776;</div>
-    <nav class="hidden" id="navMenu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="experience.html">Experience</a>
-      <a href="skills.html">Skills</a>
+  <aside class="side-nav">
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Me</a>
+      <a href="experience.html" class="nav-link">Experience & Skills</a>
+      <a href="contact.html" class="nav-link">Contact</a>
     </nav>
-  </header>
+  </aside>
 
   <main>
+    <header>
+      <h1>Contact Me</h1>
+    </header>
+
     <section class="bubble">
       <h2>📧 Reach Out</h2>
-      <p>I'd love to hear from you! Whether you have a project, question, or just want to say hi — drop me a message.</p>
+      <p>
+        I'd love to hear from you! Whether you have a project, question, or just want to say hi — drop me a message.
+      </p>
 
-      <form class="contact-form">
+      <form class="contact-form" action="#" method="post">
         <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" required />
 
         <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required />
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
@@ -40,26 +44,11 @@
     <section class="bubble">
       <h2>🌐 Connect with Me</h2>
       <div class="social-links">
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-        <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">Twitter</a>
       </div>
     </section>
   </main>
-
-  <script>
-    const toggleBtn = document.createElement('button');
-    toggleBtn.textContent = 'Toggle Dark Mode';
-    toggleBtn.className = 'dark-toggle';
-    document.querySelector('header').appendChild(toggleBtn);
-
-    toggleBtn.addEventListener('click', () => {
-      document.body.classList.toggle('light-mode');
-    });
-
-    document.getElementById('hamburger').onclick = () => {
-      document.getElementById('navMenu').classList.toggle('hidden');
-    };
-  </script>
 </body>
 </html>
