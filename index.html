@@ -3,195 +3,172 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mariska Adriaanzen | CV</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Mariska Adriaanzen - CV</title>
   <style>
     :root {
-      --bg: #f8f3ff;
-      --purple-dark: #6a0dad;
-      --purple-mid: #b983ff;
-      --purple-light: #e0bbff;
-      --text-dark: #2b1d38;
-      --card: white;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
+      --purple-dark: #4b0082;
+      --purple-mid: #9370DB;
+      --purple-light: #e6e6fa;
+      --white: #fff;
+      --black: #222;
     }
 
     body {
-      font-family: 'Poppins', sans-serif;
-      background-color: var(--bg);
-      color: var(--text-dark);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--purple-light);
+      color: var(--black);
     }
 
     header {
       background: linear-gradient(120deg, var(--purple-dark), var(--purple-mid));
       color: white;
       padding: 60px 20px;
-      text-align: center;
     }
 
-    header h1 {
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 20px; /* soft square */
+      border: 4px solid white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-text {
+      max-width: 500px;
+    }
+
+    .header-text h1 {
       font-size: 3rem;
       margin-bottom: 10px;
     }
 
-    header p {
+    .header-text p {
       font-size: 1.3rem;
       font-weight: 300;
     }
 
     .download-btn {
-      margin-top: 20px;
       display: inline-block;
-      background: var(--purple-light);
-      color: var(--text-dark);
+      margin-top: 15px;
       padding: 10px 20px;
-      border-radius: 30px;
+      background-color: var(--purple-light);
+      color: var(--purple-dark);
+      border: none;
+      border-radius: 5px;
       text-decoration: none;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      box-shadow: 0 0 8px rgba(186, 134, 255, 0.4);
+      font-weight: bold;
+      transition: background-color 0.3s ease;
     }
 
     .download-btn:hover {
-      background: var(--purple-mid);
-      color: white;
-      box-shadow: 0 0 12px rgba(138, 43, 226, 0.8);
+      background-color: white;
     }
 
-    section {
+    main {
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
     }
 
-    .card {
-      background-color: var(--card);
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      padding: 30px;
-      margin-bottom: 30px;
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
+    section {
+      margin-bottom: 40px;
     }
 
     h2 {
       color: var(--purple-dark);
-      margin-bottom: 15px;
-      border-bottom: 2px solid var(--purple-light);
+      border-bottom: 2px solid var(--purple-mid);
       padding-bottom: 5px;
+      margin-bottom: 15px;
     }
 
     ul {
-      padding-left: 20px;
-      margin-top: 10px;
+      list-style-type: none;
+      padding: 0;
     }
 
-    a {
-      color: var(--purple-dark);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.85rem;
-      color: #777;
-      background: #f1e6ff;
-      border-top: 1px solid #ddd;
+    li {
+      margin-bottom: 10px;
     }
 
     @media screen and (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
+      .header-content {
+        flex-direction: column;
+        text-align: center;
       }
 
-      section {
-        padding: 20px;
+      .header-text {
+        text-align: center;
       }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <div class="header-content">
-    <img src="Me but nice.jpg" alt="Mariska Adriaanzen" class="profile-pic" />
-    <div class="header-text">
-      <h1>Mariska Adriaanzen</h1>
-      <p>Software Developer · Creative Technologist · Problem Solver</p>
-      <a class="download-btn" href="cv.pdf" download>Download PDF CV</a>
+  <header>
+    <div class="header-content">
+      <img src="Me but nice.jpg" alt="Mariska Adriaanzen" class="profile-pic" />
+      <div class="header-text">
+        <h1>Mariska Adriaanzen</h1>
+        <p>Software Developer · Creative Technologist · Problem Solver</p>
+        <a class="download-btn" href="cv.pdf" download>Download PDF CV</a>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Passionate and curious developer exploring the world of software engineering, systems thinking, and digital creativity. I love blending logic and artistry to build things that matter.
+      </p>
+    </section>
 
-
-  <section>
-    <div class="card">
-      <h2>🌟 About Me</h2>
-      <p>I’m a creatively driven developer with a passion for combining design, code, and storytelling. I specialize in .NET, full-stack development, and UI design.</p>
-    </div>
-
-    <div class="card">
-      <h2>🛠 Skills</h2>
+    <section>
+      <h2>Skills</h2>
       <ul>
-        <li>C# (.NET MAUI, WinForms, Blazor)</li>
-        <li>SQL Server, Entity Framework</li>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Python (Data analysis, automation)</li>
-        <li>Networking (Packet Tracer, Protocols)</li>
+        <li>✔️ C# / .NET / MAUI</li>
+        <li>✔️ Web Development (HTML, CSS, JavaScript)</li>
+        <li>✔️ SQL, Data Management</li>
+        <li>✔️ Network Design (Packet Tracer)</li>
+        <li>✔️ UX/UI Design Principles</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="card">
-      <h2>🎓 Education</h2>
-      <p><strong>Nation Senior Certificate</strong><br/>Hoerskool Noordheuwel · 2021</p>
-      <p><strong>BSc Physics and Mathematics</strong><br/>North West University · 2022–2023 (Incomplete)</p>
-      <p><strong>BSc Computer Science</strong><br/>North West University · 2023–Present</p>
-    </div>
-
-    <div class="card">
-      <h2>💼 Experience</h2>
-      <p><strong>Junior Developer Intern</strong><br/>Innovative Apps Inc · 2024</p>
+    <section>
+      <h2>Projects</h2>
       <ul>
-        <li>Built forms-based systems in C# for client tracking</li>
-        <li>Collaborated on database design with SQL Server</li>
-        <li>Participated in UI prototyping and feedback sessions</li>
+        <li><strong>ChimeIn Mood Tracker:</strong> A .NET MAUI mobile app for emotional journaling.</li>
+        <li><strong>Taxi Booking App:</strong> C# Windows Forms app to manage vehicle records.</li>
+        <li><strong>Fitness Tracker Clustering:</strong> Python + KMeans data visualization in Colab.</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="card">
-      <h2>🚀 Projects</h2>
+    <section>
+      <h2>Education</h2>
       <ul>
-        <li><strong>ChimeIn – Mood Tracker App</strong>: .NET MAUI-based mood journal with charts and emotion tagging.</li>
-        <li><strong>Optometrist Booking System</strong>: ASP.NET app with SQL integration and user-friendly booking interface.</li>
-        <li><strong>Office Network Design</strong>: Packet Tracer simulation for wired + Wi-Fi infrastructure for a 100x50m building.</li>
+        <li><strong>Bachelor of Computer Science</strong><br/>North-West University</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="card">
-      <h2>📬 Contact</h2>
-      <p>Email: <a href="mailto:mariska@adriaanzen.co.za">mariska@adriaanzen.co.za</a></p>
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
       <p>GitHub: <a href="https://github.com/Caspers-Shadow" target="_blank">Caspers-Shadow</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <footer>
-    © 2025 Mariska Adriaanzen. Crafted with code & creativity 💜
-  </footer>
 </body>
 </html>
