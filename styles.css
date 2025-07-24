@@ -235,3 +235,79 @@ p, li {
 .social-links a:hover {
   color: var(--white);
 }
+
+/* Intro Paragraph */
+.intro {
+  font-size: 1.2rem;
+  color: var(--white);
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Quick Stats Section */
+.quick-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.quick-stats div {
+  background: rgba(106, 13, 173, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 120px;
+  box-shadow: 0 0 10px rgba(200, 162, 200, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.quick-stats div:hover {
+  transform: translateY(-5px);
+}
+
+.quick-stats strong {
+  font-size: 2rem;
+  color: var(--lilac);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.quick-stats span {
+  font-size: 1rem;
+  color: var(--white);
+}
+
+/* CTA Button */
+.cta-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--lilac);
+  color: var(--background);
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: var(--violet);
+  color: var(--white);
+}
+
+/* Quote Styling */
+.quote {
+  text-align: center;
+  font-style: italic;
+  color: var(--lilac);
+  margin-top: 50px;
+  font-size: 1.2rem;
+}
+
