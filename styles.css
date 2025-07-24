@@ -2,11 +2,14 @@
   --violet: #6A0DAD;
   --lilac: #C8A2C8;
   --background: #F8F4FA;
+  --form-bg: #EDE4F7;
+  --input-border: #BDA4DB;
+  --input-focus: #8A51D0;
 }
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--background);
   color: var(--violet);
 }
@@ -16,22 +19,54 @@ header {
   align-items: center;
   background: var(--violet);
   color: white;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(106, 13, 173, 0.5);
+  z-index: 10;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid var(--lilac);
+  box-shadow:
+    0 0 10px var(--lilac),
+    0 4px 8px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05) rotate(3deg);
+  box-shadow:
+    0 0 20px var(--violet),
+    0 6px 14px rgba(0, 0, 0, 0.2);
 }
 
 #hamburger {
   margin-left: auto;
-  font-size: 2rem;
+  font-size: 2.2rem;
   cursor: pointer;
+  user-select: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+#hamburger:hover {
+  background-color: var(--lilac);
+  color: var(--violet);
 }
 
 nav {
   position: absolute;
-  top: 60px;
+  top: 68px;
   right: 20px;
   background: var(--violet);
-  border-radius: 8px;
-  padding: 0.5rem;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 20px rgba(106, 13, 173, 0.5);
 }
 
 nav.hidden {
@@ -41,46 +76,124 @@ nav.hidden {
 nav a {
   display: block;
   color: white;
-  padding: 0.5rem;
+  padding: 0.7rem 0;
   text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
 
-.profile-pic {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-right: 1rem;
+nav a:hover {
+  color: var(--lilac);
 }
 
 main {
-  padding: 1rem;
+  padding: 2rem 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 section {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
-.hidden {
-  display: none;
+h1, h2 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+p, ul {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #3a1a6a;
+}
+
+ul li {
+  margin: 0.4rem 0;
+}
+
+/* ---- Contact form styling ---- */
+
+#contactForm {
+  background: var(--form-bg);
+  padding: 2rem 2.5rem;
+  border-radius: 15px;
+  box-shadow:
+    inset 0 0 15px #fff,
+    0 4px 25px rgba(106, 13, 173, 0.2);
 }
 
 form input, form textarea {
   width: 100%;
-  padding: 0.5rem;
-  margin: 0.5rem 0;
-  border: 1px solid var(--lilac);
-  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  margin: 0.7rem 0 1.2rem;
+  border: 2px solid var(--input-border);
+  border-radius: 30px;
+  background: linear-gradient(145deg, #f9f5ff, #e2d9f9);
+  font-size: 1rem;
+  font-family: inherit;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: inset 3px 3px 5px #d2c4f0,
+              inset -3px -3px 5px #ffffff;
+  resize: vertical;
 }
 
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: var(--input-focus);
+  box-shadow:
+    0 0 8px var(--input-focus),
+    inset 3px 3px 7px #b3a0de,
+    inset -3px -3px 7px #ede5f9;
+}
+
+form textarea {
+  min-height: 120px;
+}
+
+/* Submit button */
 form button {
-  background: var(--violet);
+  background: linear-gradient(135deg, var(--violet), var(--lilac));
   color: white;
   border: none;
-  padding: 0.7rem 1.5rem;
-  border-radius: 4px;
+  padding: 0.9rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 50px;
   cursor: pointer;
+  box-shadow: 0 6px 15px rgba(106, 13, 173, 0.5);
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+  display: block;
+  margin-top: 1rem;
+  user-select: none;
 }
 
 form button:hover {
-  background: var(--lilac);
+  background: linear-gradient(135deg, var(--lilac), var(--violet));
+  box-shadow: 0 8px 20px rgba(106, 13, 173, 0.7);
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .profile-pic {
+    margin-bottom: 1rem;
+  }
+  nav {
+    position: static;
+    width: 100%;
+    padding: 0.5rem 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  nav a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+  }
 }
