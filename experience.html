@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Experience & Skills</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Experience</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
+  <button class="side-nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+
   <aside class="side-nav">
     <nav>
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="about.html" class="nav-link">About Me</a>
-      <a href="experience.html" class="nav-link">Experience & Skills</a>
-      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </aside>
 
@@ -30,7 +32,7 @@
     </section>
 
     <section class="bubble">
-      <h2>🧠 Hard Skills</h2>
+      <h2>🧰 Hard Skills</h2>
       <ul>
         <li>HTML, CSS, JavaScript, C#, .NET</li>
         <li>React, .NET MAUI, SQL</li>
@@ -46,5 +48,30 @@
       </ul>
     </section>
   </main>
+
+  <script>
+    const toggleBtn = document.querySelector('.side-nav-toggle');
+    const sideNav = document.querySelector('.side-nav');
+
+    toggleBtn.addEventListener('click', () => {
+      sideNav.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.side-nav nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          sideNav.classList.remove('open');
+        }
+      });
+    });
+
+    const currentPath = window.location.pathname.split('/').pop();
+    document.querySelectorAll('.side-nav nav a').forEach(link => {
+      const href = link.getAttribute('href');
+      if (href === currentPath) {
+        link.classList.add('active');
+      }
+    });
+  </script>
 </body>
 </html>
