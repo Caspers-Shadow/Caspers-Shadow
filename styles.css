@@ -155,6 +155,12 @@ header {
   }
 }
 
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 /* Sections styling */
 section.bubble {
   background: rgba(106, 13, 173, 0.15);
@@ -163,6 +169,16 @@ section.bubble {
   margin-bottom: 25px;
   box-shadow: 0 0 15px rgba(106, 13, 173, 0.3);
 }
+
+section.bubble {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section.bubble:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(200, 162, 200, 0.3);
+}
+
 
 h1 {
   font-size: 2.5rem;
@@ -314,6 +330,24 @@ p, li {
   margin-top: 50px;
   font-size: 1.2rem;
 }
+
+main > section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+main > section:nth-child(2) { animation-delay: 0.2s; }
+main > section:nth-child(3) { animation-delay: 0.4s; }
+main > section:nth-child(4) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 #particles-js {
   position: fixed;
