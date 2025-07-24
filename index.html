@@ -2,137 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mariska Adriaanzen | CV</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div id="particles-js"></div>
-
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-  particlesJS("particles-js", {
-    "particles": {
-      "number": {
-        "value": 100,
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
-      },
-      "color": {
-        "value": "#ffffff"
-      },
-      "shape": {
-        "type": "circle"
-      },
-      "opacity": {
-        "value": 0.9,
-        "random": true
-      },
-      "size": {
-        "value": 2,
-        "random": true
-      },
-      "line_linked": {
-        "enable": false
-      },
-      "move": {
-        "enable": true,
-        "speed": 0.4
-      }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": false
-        },
-        "onclick": {
-          "enable": false
-        }
-      }
-    },
-    "retina_detect": true
-  });
-</script>
-
-  <button class="side-nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-
-  <aside class="side-nav">
+  <div class="side-nav">
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="experience.html">Experience</a>
-      <a href="contact.html">Contact</a>
+      <a href="#" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">Work</a>
+      <a href="#">Contact</a>
     </nav>
-  </aside>
+  </div>
 
   <main>
     <header>
-      <h1>Welcome to my virtual CV</h1>
+      <h1>John Doe</h1>
+      <p>Frontend Developer & UI Designer</p>
     </header>
 
-    <img src="Me but nice.jpg" alt="Your photo" class="profile-pic-large"/>
-    <h2 class="tagline" style="text-align:center; color: var(--lilac); margin-bottom: 0;">Hi, I'm Mariska Adriaanzen</h2>
-    <p class="subtitle" style="text-align:center; font-size:1.2rem; margin-top: 6px; color: var(--white);">Creative Developer • Lifelong Learner</p>
+    <section class="bubble">
+      <h2>💼 Work Experience</h2>
+      <p>No timeline data available.</p>
+    </section>
 
-    <!-- Intro / Elevator Pitch -->
-<p class="intro" style="text-align: center; max-width: 600px; margin: 20px auto 40px auto;">
-  I’m a developer who loves blending logic with creativity. Whether it’s designing an elegant UI, solving a tricky bug, or learning a new tool, I approach each challenge with curiosity and enthusiasm.
-</p>
+    <section class="bubble">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span>React</span>
+        <span>.NET MAUI</span>
+        <span>Figma</span>
+        <span>Accessibility</span>
+      </div>
+    </section>
 
-<!-- Quick Stats -->
-<section class="quick-stats">
-  <div>
-    <strong>5+</strong>
-    <span>Years Experience</span>
-  </div>
-  <div>
-    <strong>20+</strong>
-    <span>Projects Completed</span>
-  </div>
-  <div>
-    <strong>3</strong>
-    <span>Languages Spoken</span>
-  </div>
-</section>
-
-<!-- CTA Button -->
-<div class="cta-container">
-  <a href="MariskaAdriaanzen_CV.pdf" class="cta-button">Download My CV</a>
-</div>
-
-<!-- Quote / Motto -->
-<blockquote class="quote">
-  “Creativity is intelligence having fun.” — Albert Einstein
-</blockquote>
-
+    <section class="bubble">
+      <h2>Soft Skills</h2>
+      <ul class="soft-skills">
+        <li><i>✔️</i> Team Collaboration</li>
+        <li><i>✔️</i> Creative Thinking</li>
+        <li><i>✔️</i> Problem Solving</li>
+      </ul>
+    </section>
   </main>
 
-  <script>
-    const toggleBtn = document.querySelector('.side-nav-toggle');
-    const sideNav = document.querySelector('.side-nav');
+  <div id="particles-js"></div>
 
-    toggleBtn.addEventListener('click', () => {
-      sideNav.classList.toggle('open');
-    });
-
-    document.querySelectorAll('.side-nav nav a').forEach(link => {
-      link.addEventListener('click', () => {
-        if (window.innerWidth <= 768) {
-          sideNav.classList.remove('open');
-        }
-      });
-    });
-
-    const currentPath = window.location.pathname.split('/').pop();
-    document.querySelectorAll('.side-nav nav a').forEach(link => {
-      const href = link.getAttribute('href');
-      if (href === currentPath || (href === 'index.html' && currentPath === '')) {
-        link.classList.add('active');
-      }
-    });
-  </script>
+  <script src="particles.js"></script>
 </body>
 </html>
