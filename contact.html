@@ -27,4 +27,39 @@
         <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" required>
 
-        <label for="email
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="bubble">
+      <h2>🌐 Connect with Me</h2>
+      <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const toggleBtn = document.createElement('button');
+    toggleBtn.textContent = 'Toggle Dark Mode';
+    toggleBtn.className = 'dark-toggle';
+    document.querySelector('header').appendChild(toggleBtn);
+
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+    });
+
+    document.getElementById('hamburger').onclick = () => {
+      document.getElementById('navMenu').classList.toggle('hidden');
+    };
+  </script>
+</body>
+</html>
