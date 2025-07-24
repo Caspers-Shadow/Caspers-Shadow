@@ -77,8 +77,8 @@ main {
 }
 
 .profile-pic-large {
-  width: 350px;
-  height: 250px;
+  width: 500px;
+  height: 500px;
   margin: 30px auto;
   border-radius: 12px;
   display: block;
