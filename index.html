@@ -3,172 +3,160 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mariska Adriaanzen - CV</title>
+  <title>Caspers-Shadow | Digital CV</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <style>
-    :root {
-      --purple-dark: #4b0082;
-      --purple-mid: #9370DB;
-      --purple-light: #e6e6fa;
-      --white: #fff;
-      --black: #222;
-    }
-
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: var(--purple-light);
-      color: var(--black);
+      background-color: #f9f6ff;
+      color: #333;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .dark-mode {
+      background-color: #1a1a2e;
+      color: #eee;
     }
 
     header {
-      background: linear-gradient(120deg, var(--purple-dark), var(--purple-mid));
+      background: linear-gradient(to right, #a18cd1, #fbc2eb);
       color: white;
-      padding: 60px 20px;
+      padding: 2rem;
+      text-align: center;
     }
 
-    .header-content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-      max-width: 1100px;
+    .dark-mode header {
+      background: linear-gradient(to right, #4b0082, #8a2be2);
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 800px;
       margin: auto;
-    }
-
-    .profile-pic {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 20px; /* soft square */
-      border: 4px solid white;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .header-text {
-      max-width: 500px;
-    }
-
-    .header-text h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    .header-text p {
-      font-size: 1.3rem;
-      font-weight: 300;
-    }
-
-    .download-btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: var(--purple-light);
-      color: var(--purple-dark);
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .download-btn:hover {
-      background-color: white;
-    }
-
-    main {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    section {
-      margin-bottom: 40px;
     }
 
     h2 {
-      color: var(--purple-dark);
-      border-bottom: 2px solid var(--purple-mid);
-      padding-bottom: 5px;
-      margin-bottom: 15px;
+      color: #6a0dad;
     }
 
-    ul {
-      list-style-type: none;
-      padding: 0;
+    .dark-mode h2 {
+      color: #dcd0ff;
     }
 
-    li {
-      margin-bottom: 10px;
+    .profile-pic {
+      max-width: 150px;
+      border-radius: 100px;
+      margin: 1rem auto;
+      display: block;
+      border: 4px solid #a18cd1;
     }
 
-    @media screen and (max-width: 600px) {
-      .header-content {
-        flex-direction: column;
-        text-align: center;
-      }
+    .form-group {
+      margin-bottom: 1rem;
+    }
 
-      .header-text {
-        text-align: center;
-      }
+    label {
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #6a0dad;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #4b0082;
+    }
+
+    .toggle-btn {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: #eee;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .dark-mode .toggle-btn {
+      background: #333;
+      color: #fff;
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <div class="header-content">
-      <img src="Me but nice.jpg" alt="Mariska Adriaanzen" class="profile-pic" />
-      <div class="header-text">
-        <h1>Mariska Adriaanzen</h1>
-        <p>Software Developer · Creative Technologist · Problem Solver</p>
-        <a class="download-btn" href="cv.pdf" download>Download PDF CV</a>
-      </div>
-    </div>
+  <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+  <header data-aos="fade-down">
+    <h1>Caspers-Shadow</h1>
+    <p>Software Developer | Creative Technologist</p>
+    <img src="profile.jpg" alt="Profile Picture" class="profile-pic"/>
   </header>
 
-  <main>
+  <div class="container" data-aos="fade-up">
     <section>
       <h2>About Me</h2>
-      <p>
-        Passionate and curious developer exploring the world of software engineering, systems thinking, and digital creativity. I love blending logic and artistry to build things that matter.
-      </p>
+      <p>Hello! I'm a passionate developer who loves building cool things and learning along the way. This CV showcases my skills, experience, and creativity in a digital, dynamic format.</p>
     </section>
 
     <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>✔️ C# / .NET / MAUI</li>
-        <li>✔️ Web Development (HTML, CSS, JavaScript)</li>
-        <li>✔️ SQL, Data Management</li>
-        <li>✔️ Network Design (Packet Tracer)</li>
-        <li>✔️ UX/UI Design Principles</li>
-      </ul>
+      <h2>Contact Me</h2>
+      <form action="https://formsubmit.io/send/mariska@adriaanzen.co.za" method="POST">
+        <input name="_redirect" type="hidden" value="https://caspers-shadow.github.io/thankyou.html">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" name="name" required/>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" name="email" required/>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
     </section>
 
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>ChimeIn Mood Tracker:</strong> A .NET MAUI mobile app for emotional journaling.</li>
-        <li><strong>Taxi Booking App:</strong> C# Windows Forms app to manage vehicle records.</li>
-        <li><strong>Fitness Tracker Clustering:</strong> Python + KMeans data visualization in Colab.</li>
-      </ul>
+    <section data-aos="fade-up">
+      <h2>Feedback</h2>
+      <form action="https://formsubmit.io/send/mariska@adriaanzen.co.za" method="POST">
+        <input type="hidden" name="_subject" value="Website Feedback" />
+        <div class="form-group">
+          <label for="feedback">How can I improve this website?</label>
+          <textarea name="feedback" rows="4" required></textarea>
+        </div>
+        <button type="submit">Send Feedback</button>
+      </form>
     </section>
+  </div>
 
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Bachelor of Computer Science</strong><br/>North-West University</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/Caspers-Shadow" target="_blank">Caspers-Shadow</a></p>
-    </section>
-  </main>
-
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
