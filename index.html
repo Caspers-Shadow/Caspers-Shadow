@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf‑8">
+  <meta name="viewport" content="width=device-width,initial‑scale=1">
+  <title>Mariska’s CV</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="your‑photo.jpg" alt="Mariska" class="profile-pic">
+    <div id="hamburger" onclick="toggleMenu()">☰</div>
+    <nav id="menu" class="hidden">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#contactForm">Contact</a>
+      <!-- Add more here -->
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h1>About Me</h1>
+      <p>Hi, I’m Mariska…</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <!-- CV content -->
+    </section>
+
+    <section id="contactForm" class="hidden">
+      <h2>Contact / Feedback</h2>
+      <form action="#" method="post">
+        <input name="name" placeholder="Your name">
+        <input type="email" name="email" placeholder="Your email">
+        <textarea name="message" placeholder="Your message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
