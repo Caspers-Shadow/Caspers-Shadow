@@ -4,110 +4,185 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Caspers Shadow | CV</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0; padding: 0;
-      background-color: #f7f7f7;
-      color: #333;
+    :root {
+      --bg: #f8f3ff;
+      --purple-dark: #6a0dad;
+      --purple-mid: #b983ff;
+      --purple-light: #e0bbff;
+      --text-dark: #2b1d38;
+      --card: white;
     }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg);
+      color: var(--text-dark);
+    }
+
     header {
-      background-color: #333;
+      background: linear-gradient(120deg, var(--purple-dark), var(--purple-mid));
       color: white;
-      padding: 30px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
+
+    .download-btn {
+      margin-top: 20px;
+      display: inline-block;
+      background: var(--purple-light);
+      color: var(--text-dark);
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 8px rgba(186, 134, 255, 0.4);
+    }
+
+    .download-btn:hover {
+      background: var(--purple-mid);
+      color: white;
+      box-shadow: 0 0 12px rgba(138, 43, 226, 0.8);
+    }
+
     section {
-      padding: 20px 40px;
-      max-width: 800px;
+      padding: 40px 20px;
+      max-width: 900px;
       margin: auto;
     }
+
+    .card {
+      background-color: var(--card);
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 30px;
+      margin-bottom: 30px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
     h2 {
-      border-bottom: 2px solid #ccc;
+      color: var(--purple-dark);
+      margin-bottom: 15px;
+      border-bottom: 2px solid var(--purple-light);
       padding-bottom: 5px;
     }
+
     ul {
       padding-left: 20px;
+      margin-top: 10px;
     }
-    .contact a {
-      color: #007acc;
+
+    a {
+      color: var(--purple-dark);
+      text-decoration: none;
     }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
-      font-size: 0.8em;
+      font-size: 0.85rem;
       color: #777;
+      background: #f1e6ff;
+      border-top: 1px solid #ddd;
     }
-    .download {
-      display: inline-block;
-      margin-top: 10px;
-      background: #007acc;
-      color: white;
-      padding: 8px 15px;
-      text-decoration: none;
-      border-radius: 4px;
+
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        padding: 20px;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Caspers Shadow</h1>
-    <p>Software Developer | Tech Enthusiast</p>
-    <div class="contact">
-      <p>
-        <a href="mailto:your@email.com">Email</a> |
-        <a href="https://github.com/Caspers-Shadow" target="_blank">GitHub</a> |
-        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-      </p>
-    </div>
-    <a class="download" href="cv.pdf" download>Download CV (PDF)</a>
+    <p>Software Developer · Creative Technologist · Problem Solver</p>
+    <a class="download-btn" href="cv.pdf" download>Download PDF CV</a>
   </header>
 
   <section>
-    <h2>About Me</h2>
-    <p>I'm a passionate developer experienced in building .NET applications, designing databases, and deploying web systems. I'm currently studying computer science and love combining logic with design.</p>
-  </section>
+    <div class="card">
+      <h2>🌟 About Me</h2>
+      <p>I’m a creatively driven developer with a passion for combining design, code, and storytelling. I specialize in .NET, full-stack development, and UI design — with a purple aesthetic flair! 😄</p>
+    </div>
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>C# (.NET MAUI, Windows Forms)</li>
-      <li>SQL Server & Entity Framework</li>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Python, Java</li>
-      <li>Networking (Cisco Packet Tracer)</li>
-    </ul>
-  </section>
+    <div class="card">
+      <h2>🛠 Skills</h2>
+      <ul>
+        <li>C# (.NET MAUI, WinForms, Blazor)</li>
+        <li>SQL Server, Entity Framework</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python (Data analysis, automation)</li>
+        <li>Networking (Packet Tracer, Protocols)</li>
+      </ul>
+    </div>
 
-  <section>
-    <h2>Education</h2>
-    <p><strong>BSc Computer Science</strong> – Your University, 202X–202X</p>
-  </section>
+    <div class="card">
+      <h2>🎓 Education</h2>
+      <p><strong>BSc Computer Science</strong><br/>Your University · 202X–202X</p>
+    </div>
 
-  <section>
-    <h2>Experience</h2>
-    <p><strong>Intern – Software Developer</strong><br/>Company Name – 2024<br/>
-    Developed Windows Forms applications to manage client bookings and improve database interaction.</p>
-  </section>
+    <div class="card">
+      <h2>💼 Experience</h2>
+      <p><strong>Junior Developer Intern</strong><br/>Innovative Apps Inc · 2024</p>
+      <ul>
+        <li>Built forms-based systems in C# for client tracking</li>
+        <li>Collaborated on database design with SQL Server</li>
+        <li>Participated in UI prototyping and feedback sessions</li>
+      </ul>
+    </div>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>ChimeIn – Mood Tracker</strong>: Mobile app for journaling mood using .NET MAUI</li>
-      <li><strong>Optometrist Booking App</strong>: WebForms + SQL appointment booking system</li>
-      <li><strong>Packet Tracer Network Design</strong>: 100x50m building Wi-Fi and wired setup simulation</li>
-    </ul>
-  </section>
+    <div class="card">
+      <h2>🚀 Projects</h2>
+      <ul>
+        <li><strong>ChimeIn – Mood Tracker App</strong>: .NET MAUI-based mood journal with charts and emotion tagging.</li>
+        <li><strong>Optometrist Booking System</strong>: ASP.NET app with SQL integration and user-friendly booking interface.</li>
+        <li><strong>Office Network Design</strong>: Packet Tracer simulation for wired + Wi-Fi infrastructure for a 100x50m building.</li>
+      </ul>
+    </div>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
-    <p>Location: Your City, Country</p>
+    <div class="card">
+      <h2>📬 Contact</h2>
+      <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+      <p>GitHub: <a href="https://github.com/Caspers-Shadow" target="_blank">Caspers-Shadow</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    </div>
   </section>
 
   <footer>
-    © 2025 Caspers Shadow. All rights reserved.
+    © 2025 Caspers Shadow. Crafted with code & creativity 💜
   </footer>
 </body>
 </html>
