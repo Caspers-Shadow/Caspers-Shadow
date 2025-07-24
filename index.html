@@ -1,111 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf‑8">
-  <meta name="viewport" content="width=device-width,initial‑scale=1">
-  <title>Mariska Adriaanzen | CV</title>
+  <meta charset="UTF-8">
+  <title>Home - Mariska Adriaanzen</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <img src="Me but nice.jpg" alt="Profile picture" class="profile-pic-large">
-    <div id="hamburger" onclick="toggleMenu()">☰</div>
+    <h1>Mariska Adriaanzen</h1>
+    <h2 class="title">Aspiring Software Developer</h2>
+    <div id="hamburger">&#9776;</div>
     <nav id="navMenu" class="hidden">
-      <a href="about.html">About Me</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
       <a href="experience.html">Experience</a>
-      <a href="contact.html">Contact</a>      
+      <a href="education.html">Education</a>
+      <a href="skills.html">Skills</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-<main>
-  <section id="home">
-    <h1>Mariska Adriaanzen</h1>
-    <h2>BSC Information Technology Student</h2>
-    <p>Welcome to my virtual CV! Here’s a quick intro about me...</p>
-  </section>
-
-  <section id="about" class="hidden">
-    <h2>About Me</h2>
-    <p>A detailed bio about me, career goals, professional philosophy...</p>
-    <ul>
-      <li>Motivation and key strengths</li>
-      <li>Personal interests</li>
-    </ul>
-  </section>
-
-  <section id="experience" class="hidden">
-    <h2>Experience</h2>
-    <article>
-      <h3>Runner – Company Name</h3>
-      <p>Dates, Location</p>
-      <ul>
-        <li>Key responsibility 1</li>
-        <li>Achievement 2</li>
-      </ul>
-    </article>
-    <!-- Add more jobs/projects -->
-  </section>
-
-  <section id="education" class="hidden">
-    <h2>Education</h2>
-    <ul>
-      <li>BSC Information Technology – University Name (Dates)</li>
-      <li>Certifications (name, date)</li>
-    </ul>
-  </section>
-
-  <section id="skills" class="hidden">
-    <h2>Skills</h2>
-    <h3>Hard Skills</h3>
-    <ul>
-      <li>Programming languages (e.g. C#, Python)</li>
-      <li>Software tools (e.g. Visual Studio, Git)</li>
-    </ul>
-    <h3>Soft Skills</h3>
-    <ul>
-      <li>Communication</li>
-      <li>Leadership</li>
-      <li>Problem-solving</li>
-    </ul>
-  </section>
-
-  <section id="portfolio" class="hidden">
-    <h2>Portfolio / Projects</h2>
-    <article>
-      <h3>Project Title 1</h3>
-      <img src="project1-screenshot.jpg" alt="Project 1 Screenshot" class="project-img">
-      <p>Description of project, technologies used, and outcome.</p>
-      <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener">View Code</a>
-    </article>
-    <!-- Add more projects -->
-  </section>
-
-  <section id="contactForm" class="hidden">
-    <h2>Contact / Feedback</h2>
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    <p>Socials: 
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a> | 
-      <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a> | 
-      <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener">Twitter</a>
-    </p>
-    <form action="https://formspree.io/f/mqalpvrq" method="POST">
-      <input name="name" placeholder="Your name" required>
-      <input type="email" name="email" placeholder="Your email" required>
-      <textarea name="message" placeholder="Your message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-</main>
-
+  <main>
+    <section class="home-section">
+      <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic-large">
+      <p class="intro">
+        Welcome to my personal CV website. I'm a passionate developer focused on creating clean, efficient, and engaging software. Dive into my work, goals, and skills using the menu above.
+      </p>
+    </section>
+  </main>
 
   <script>
-  const hamburger = document.getElementById('hamburger');
-  const navMenu = document.getElementById('navMenu');
-
-  hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('hidden');
-  });
-</script>
-
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
