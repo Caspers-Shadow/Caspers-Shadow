@@ -77,13 +77,14 @@ main {
 }
 
 .profile-pic-large {
-  width: 250px;
+  width: 350px;
   height: 250px;
-  border-radius: 50%;
   margin: 30px auto;
+  border-radius: 12px;
   display: block;
   box-shadow: 0 0 40px var(--violet);
   animation: glow 3s infinite alternate;
+  object-fit: cover;
 }
 
 @keyframes glow {
