@@ -27,7 +27,6 @@ body {
   animation: gradientBG 30s ease infinite;
 }
 
-
 /* Side Navigation */
 .side-nav {
   background: var(--violet);
@@ -78,7 +77,7 @@ body {
 
 /* Main content */
 main {
-  margin-left: 240px; /* space for nav */
+  margin-left: 240px;
   padding: 20px;
   flex-grow: 1;
 }
@@ -168,9 +167,6 @@ section.bubble {
   border-radius: 15px;
   margin-bottom: 25px;
   box-shadow: 0 0 15px rgba(106, 13, 173, 0.3);
-}
-
-section.bubble {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -193,8 +189,6 @@ section.bubble:hover {
   color: var(--white);
   border: 1px solid var(--lilac);
 }
-
-
 
 h1 {
   font-size: 2.5rem;
@@ -269,15 +263,34 @@ ul.details {
 }
 
 /* Social links */
+.social-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
 .social-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   color: var(--lilac);
-  margin-right: 20px;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.2s ease-in-out;
+  font-size: 1.1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-links a i {
+  font-size: 1.4rem;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-links a:hover {
+  color: var(--white);
+}
+
+.social-links a:hover i {
+  transform: scale(1.2);
   color: var(--white);
 }
 
@@ -373,7 +386,6 @@ main > section:nth-child(4) { animation-delay: 0.6s; }
   }
 }
 
-
 #particles-js {
   position: fixed;
   top: 0;
@@ -384,6 +396,3 @@ main > section:nth-child(4) { animation-delay: 0.6s; }
   background: transparent;
   pointer-events: none;
 }
-
-}
-
