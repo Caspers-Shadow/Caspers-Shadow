@@ -28,10 +28,10 @@ Hi, I'm Mariska! I'm a Computer Science student passionate about Python, C#, and
 
 ###
 
-<a href="https://www.instagram.com/yourprofile" target="_blank">
+<a href="https://www.instagram.com/marizen_03" target="_blank">
   <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="Instagram logo" />
 </a>
-<a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+<a href="https://www.linkedin.com/in/mariska-adriaanzen" target="_blank">
   <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="LinkedIn logo" />
 </a>
 
