@@ -56,6 +56,12 @@ Hi, I'm Mariska! I'm a Computer Science student passionate about Python, C#, and
 </picture>
 
 ###
+<h3 align="center">🎧 Currently Vibing To</h3>
+
+<div align="center">
+  <img src="https://your-name.vercel.app/api/view?uid=d8zijq8uvrb5tnxkbmewft591&cover_image=true&background_color=0d1117&bar_color=bb86fc&bar_color_cover=true" />
+</div>
+
 ## 📌 Pinned Projects
 
 ### 🔐 [CMPG-315](https://github.com/Caspers-Shadow/CMPG-315)
