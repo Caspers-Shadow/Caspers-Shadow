@@ -64,33 +64,18 @@ Hi, I'm Mariska! I'm a Computer Science student passionate about Python, C#, and
 
 ## 📌 Pinned Projects
 
-### 🔐 [CMPG-315](https://github.com/Caspers-Shadow/CMPG-315)
+### 🔐 [CMPG-315]([https://github.com/Caspers-Shadow/CMPG-315](https://github.com/Caspers-Shadow/CMPG-315))
 A group-based university project featuring a Python chat app and network design using Packet Tracer.
 
 **Tech:** ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![Packet Tracer](https://img.shields.io/badge/PacketTracer-Cisco-blue)
 
 ---
 
-### 💬 [Chat App](https://github.com/Caspers-Shadow/YourChatAppRepo)
-A peer-to-peer messaging application using Python and sockets, with individual and group chat functionality.
+### 💬 [CV]([https://github.com/Caspers-Shadow/YourChatAppRepo](https://github.com/Caspers-Shadow/Caspers-Shadow))
+My personal CV
 
 **Tech:** ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![Tkinter](https://img.shields.io/badge/Tkinter-UI-green)
 
 ---
-
-### 🗃️ [CMPG-313 KMeans Clustering](https://github.com/Caspers-Shadow/YourKMeansRepo)
-A clustering project in Jupyter Notebook using simulated fitness tracker data and the KMeans algorithm.
-
-**Tech:** ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)
-
----
-
-### 🚗 [Vehicle Management System](https://github.com/Caspers-Shadow/YourVehicleRepo)
-A C# Windows Forms application that manages vehicle records using SQL Server.
-
-**Tech:** ![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=c-sharp&logoColor=white) ![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=flat&logo=microsoft-sql-server&logoColor=white)
-
----
-
 
 
