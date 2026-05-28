@@ -13,7 +13,6 @@ Hi, I'm Mariska! I'm a Computer Science student passionate about Python, C#, and
   <img src="https://github-readme-stats.vercel.app/api?username=Caspers-Shadow&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=synthwave&locale=en&hide_border=false" height="150" alt="stats graph"  />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Caspers-Shadow&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=synthwave&hide_border=false" height="150" alt="languages graph"  />
 </div>
-
 ###
 
 <img align="right" height="200" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWx4OGg5dDExbmdsZmc2djZybjlhZHBkaDE4djhmY3h1czNidDF0ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9vzM2O7lztv8I/giphy.gif"  />
@@ -58,9 +57,8 @@ Hi, I'm Mariska! I'm a Computer Science student passionate about Python, C#, and
 ###
 <h3 align="center">🎧 Currently Vibing To</h3>
 
-<div align="center">
-  <img src="https://your-name.vercel.app/api/view?uid=d8zijq8uvrb5tnxkbmewft591&cover_image=true&background_color=0d1117&bar_color=bb86fc&bar_color_cover=true" />
-</div>
+[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=d8zijq8uvrb5tnxkbmewft591&cover_image=true&theme=default&show_offline=true&background_color=ffffff&interchange=false&profanity=false&hide_remaster=false&bar_color=c37ce4&bar_color_cover=true)](https://spotify-github-profile.kittinanx.com/api/view?uid=d8zijq8uvrb5tnxkbmewft591&redirect=true)
+
 
 ## 📌 Pinned Projects
 
