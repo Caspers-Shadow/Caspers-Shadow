@@ -20,10 +20,10 @@
 
 ```python
 class Mariska:
-    university = "Computer Science Student"
-    loves      = ["Python", "C#", "networking", "AI"]
-    currently  = "building things & breaking them"
-    fun_fact   = "the bugs are features in disguise"
+    university = "BSc Honours in Computer Science and Information Technology Student"
+    loves      = ["Python", "C#", "Networking", "AI"]
+    currently  = "building things & breaking them ;)"
+    fun_fact   = "it's not a bugs, it's a feature"
 ```
 
 <br clear="both" />
