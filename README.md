@@ -45,11 +45,6 @@
 ### ˚ ༘ ♡ github stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Caspers-Shadow&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=13111a&title_color=c084fc&icon_color=a78bfa&text_color=e2d9f3&include_all_commits=true&count_private=true" height="160" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Caspers-Shadow&layout=compact&theme=midnight-purple&hide_border=true&bg_color=13111a&title_color=c084fc&text_color=e2d9f3&langs_count=5" height="160" />
-</div>
-
-<div align="center">
   <img src="https://streak-stats.demolab.com?user=Caspers-Shadow&theme=midnight-purple&hide_border=true&background=13111a&ring=c084fc&fire=a78bfa&currStreakLabel=c084fc&sideLabels=a78bfa&dates=e2d9f3" />
 </div>
 
