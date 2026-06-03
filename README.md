@@ -56,7 +56,7 @@
 <tr>
 <td valign="top" width="50%">
 
-**🔐 CMPG-315 — Network & Chat App**
+**🔐 Network & Chat App**
 
 A university group project combining a Python socket-based peer-to-peer chat application with a full network design in Cisco Packet Tracer. Real networking theory brought to life in working code.
 
@@ -91,19 +91,16 @@ Machine learning project Reinforcement learning to train a DQN model to make a g
 ![Python](https://img.shields.io/badge/Python-c084fc?style=flat-square&logo=python&logoColor=white)
 ![sklearn](https://img.shields.io/badge/scikit--learn-818cf8?style=flat-square&logo=scikit-learn&logoColor=white)
 
-[✦ view repo →]([https://github.com/Caspers-Shadow/Caspers-Shadow](https://github.com/Caspers-Shadow/Spite-Analysis-2))
+[✦ view repo →](https://github.com/Caspers-Shadow/Caspers-Shadow](https://github.com/Caspers-Shadow/Spite-Analysis-2))
 
 </td>
 <td valign="top" width="50%">
 
-**🚗 Vehicle Management System**
+**🚗 NWU Classroom Polling website**
 
-A C# Windows Forms desktop application for managing vehicle records, built on SQL Server. Full CRUD functionality with a clean, user-friendly interface.
+A classroom pollinf website that is free to use for the NWU.
 
-![C#](https://img.shields.io/badge/C%23-c084fc?style=flat-square&logo=c-sharp&logoColor=white)
-![SQL Server](https://img.shields.io/badge/SQL_Server-a78bfa?style=flat-square&logo=microsoft-sql-server&logoColor=white)
-![WinForms](https://img.shields.io/badge/WinForms-818cf8?style=flat-square)
-
+[✦ view repo →](https://github.com/SlothCartel/NWU-Classroom-Polling-Group-1)
 </td>
 </tr>
 </table>
