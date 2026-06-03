@@ -56,11 +56,11 @@
 <tr>
 <td valign="top" width="50%">
 
-**🔐 Network & Chat App**
+**🔐 Network & Chat Application**
 
-A university group project combining a Python socket-based peer-to-peer chat application with a full network design in Cisco Packet Tracer. Real networking theory brought to life in working code.
+A university team project that combines a Python-based peer-to-peer chat application with a complete network infrastructure designed in Cisco Packet Tracer. The project bridges networking theory and software development through real-world implementation.
 
-![Python](https://img.shields.io/badge/Python-c084fc?style=flat-square&logoColor=white&logo=python)
+![Python](https://img.shields.io/badge/Python-c084fc?style=flat-square&logo=python&logoColor=white)
 ![Sockets](https://img.shields.io/badge/Sockets-a78bfa?style=flat-square)
 ![Tkinter](https://img.shields.io/badge/Tkinter-818cf8?style=flat-square)
 ![Cisco](https://img.shields.io/badge/Cisco-c084fc?style=flat-square&logo=cisco&logoColor=white)
@@ -70,9 +70,9 @@ A university group project combining a Python socket-based peer-to-peer chat app
 </td>
 <td valign="top" width="50%">
 
-**📄 CV — Personal Résumé**
+**📄 Personal CV & Portfolio**
 
-My living, breathing CV — a snapshot of who I am as a developer. Updated as I grow, learn, and build new things.
+A living portfolio and résumé that showcases my academic journey, technical skills, projects, and continuous growth as a software developer.
 
 ![Markdown](https://img.shields.io/badge/Markdown-c084fc?style=flat-square&logo=markdown&logoColor=white)
 ![Always Growing](https://img.shields.io/badge/always-growing_✨-a78bfa?style=flat-square)
@@ -86,21 +86,27 @@ My living, breathing CV — a snapshot of who I am as a developer. Updated as I 
 
 **🧠 Spite Analysis AI**
 
-Machine learning project Reinforcement learning to train a DQN model to make a game my family plays.
+A reinforcement learning project that trains a Deep Q-Network (DQN) agent to play and analyze *Spite*, a strategy card game my family has enjoyed for years. The project explores game AI, decision-making, and reward optimization.
 
 ![Python](https://img.shields.io/badge/Python-c084fc?style=flat-square&logo=python&logoColor=white)
-![sklearn](https://img.shields.io/badge/scikit--learn-818cf8?style=flat-square&logo=scikit-learn&logoColor=white)
+![Reinforcement Learning](https://img.shields.io/badge/Reinforcement_Learning-a78bfa?style=flat-square)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-818cf8?style=flat-square&logo=scikit-learn&logoColor=white)
 
-[✦ view repo →](https://github.com/Caspers-Shadow/Caspers-Shadow](https://github.com/Caspers-Shadow/Spite-Analysis-2))
+[✦ view repo →](https://github.com/Caspers-Shadow/Spite-Analysis-2)
 
 </td>
 <td valign="top" width="50%">
 
-**🚗 NWU Classroom Polling website**
+**🚗 NWU Classroom Polling Platform**
 
-A classroom pollinf website that is free to use for the NWU.
+A web-based polling platform developed for North-West University, allowing lecturers and students to create and participate in live classroom polls to encourage engagement and instant feedback.
+
+![ASP.NET](https://img.shields.io/badge/ASP.NET-c084fc?style=flat-square)
+![SQL](https://img.shields.io/badge/SQL-a78bfa?style=flat-square)
+![Web Development](https://img.shields.io/badge/Web_Development-818cf8?style=flat-square)
 
 [✦ view repo →](https://github.com/SlothCartel/NWU-Classroom-Polling-Group-1)
+
 </td>
 </tr>
 </table>
