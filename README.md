@@ -84,13 +84,14 @@ My living, breathing CV — a snapshot of who I am as a developer. Updated as I 
 <tr>
 <td valign="top" width="50%">
 
-**🧠 CMPG-313 — KMeans Clustering**
+**🧠 Spite Analysis AI**
 
-Machine learning project using simulated fitness tracker data. Applied KMeans clustering to uncover activity patterns and visualised results in Jupyter Notebook.
+Machine learning project Reinforcement learning to train a DQN model to make a game my family plays.
 
 ![Python](https://img.shields.io/badge/Python-c084fc?style=flat-square&logo=python&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-a78bfa?style=flat-square&logo=jupyter&logoColor=white)
 ![sklearn](https://img.shields.io/badge/scikit--learn-818cf8?style=flat-square&logo=scikit-learn&logoColor=white)
+
+[✦ view repo →]([https://github.com/Caspers-Shadow/Caspers-Shadow](https://github.com/Caspers-Shadow/Spite-Analysis-2))
 
 </td>
 <td valign="top" width="50%">
