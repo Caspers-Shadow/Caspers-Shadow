@@ -45,7 +45,7 @@
 ### ˚ ༘ ♡ github stats
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=Caspers-Shadow&theme=midnight-purple&hide_border=true&background=13111a&ring=c084fc&fire=a78bfa&currStreakLabel=c084fc&sideLabels=a78bfa&dates=e2d9f3" />
+  <img src="https://streak-stats.demolab.com/?user=Caspers-Shadow&theme=midnight-purple&hide_border=true&background=13111a&ring=c084fc&fire=a78bfa&currStreakLabel=c084fc&sideLabels=a78bfa&dates=e2d9f3" />
 </div>
 
 ---
